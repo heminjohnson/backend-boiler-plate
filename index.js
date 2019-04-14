@@ -1,9 +1,15 @@
 const express = require('express')
+require('./db/mongoose')
+const userRouter = require('./routers/user')
+const helloRouter = require('./routers/hello')
 
 const app = express()
+const port = 5000
 
-app.get('/', (req, res) => {
-  res.send({data: 'hello world'})
+app.use(express.json())
+app.use(userRouter)
+app.use(helloRouter)
+
+app.listen(port, () => {
+  console.log('Server is up on port ' + port)
 })
-
-app.listen(5000)
