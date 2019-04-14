@@ -1,0 +1,29 @@
+{
+  "name": "backend-boiler-plate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heminjohnson/backend-boiler-plate.git"
+  },
+  "author": "Hemin Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heminjohnson/backend-boiler-plate/issues"
+  },
+  "homepage": "https://github.com/heminjohnson/backend-boiler-plate#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
