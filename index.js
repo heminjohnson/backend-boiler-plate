@@ -8,7 +8,7 @@ const helloRouter = require("./routers/hello");
 const app = express();
 const port = 5000;
 
-app.use(require("./middlewares/middelwares"));
+app.use(require("./middlewares"));
 
 app.use(userRouter);
 app.use(helloRouter);
