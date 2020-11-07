@@ -2,7 +2,6 @@ const express = require("express");
 if (process.env.DB_CONNECTION) {
   require("./db/mongoose");
 }
-const cors = require('cors')
 const userRouter = require("./routers/user");
 const helloRouter = require("./routers/hello");
 
