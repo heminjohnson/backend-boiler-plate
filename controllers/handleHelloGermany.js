@@ -1,9 +1,9 @@
 const handleHelloGermany = async (req, res) => {
   try {
-    res.send("hello germany");
+    res.json({message: "hello germany"});
     return "GET /germany - success";
   } catch (error) {
-    res.status(400).send(error.message);
+    res.status(400).json(error.message);
     return `GET /germany - ${error.message}`;
   }
 };
