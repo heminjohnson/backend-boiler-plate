@@ -1,7 +1,9 @@
+require('dotenv').config()
 const express = require("express");
-if (process.env.DB_CONNECTION) {
+if (process.env.DB_CONNECTION === 'true') {
   require("./db/mongoose");
 }
+
 const userRouter = require("./routers/user");
 const helloRouter = require("./routers/hello");
 
